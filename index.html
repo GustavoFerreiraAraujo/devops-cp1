@@ -19,8 +19,15 @@
             text-align: center;
         }
         .company-name {
-            color: rgb(0, 123, 255); /* Cor RGB aplicada ao nome da empresa */
             font-size: 2rem;
+            animation: colorChange 5s infinite; /* Aplica a animação de mudança de cor */
+        }
+        @keyframes colorChange {
+            0% { color: rgb(255, 0, 0); } /* Vermelho */
+            25% { color: rgb(0, 255, 0); } /* Verde */
+            50% { color: rgb(0, 0, 255); } /* Azul */
+            75% { color: rgb(255, 255, 0); } /* Amarelo */
+            100% { color: rgb(255, 0, 0); } /* Vermelho */
         }
         nav {
             margin: 1rem;
